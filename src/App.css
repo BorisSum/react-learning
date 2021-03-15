@@ -1,0 +1,26 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(10, 24, 24);
+}
+
+.app-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  margin-top:20px;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas:
+  "head head"
+  "nav cont";
+}
+.app-wrapper-content {
+  grid-area: cont;
+  background-color: grey;
+  margin-left: 10px;
+}

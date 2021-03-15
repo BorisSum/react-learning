@@ -1,0 +1,19 @@
+.friendAva {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+}
+
+.friendName {
+    line-height:30px;
+    padding-left:10px;
+}
+
+.friendItem {
+    display:flex;    
+    padding:5px;
+}
+
+.friendItem:hover {
+    background-color: darkorange;
+}

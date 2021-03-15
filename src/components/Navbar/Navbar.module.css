@@ -1,0 +1,34 @@
+.nav {
+    grid-area: nav;
+    background-color: goldenrod;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.item:hover {
+    background-color: darkorange;
+    cursor:pointer;
+    color:white;
+}
+
+.item {
+    padding:3px;
+    padding-left: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.active {
+    color:green;
+    font-weight: bold;
+}
+
+.friendsWrapper {
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding-top:10px;
+    border-top:2px solid gold;
+}

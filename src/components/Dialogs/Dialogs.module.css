@@ -1,0 +1,21 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.friends {
+    padding: 10px;
+    border-right: 2px solid lightgray;
+}
+
+.friends h2 {
+    margin-bottom: 10px;
+}
+
+.messages {
+    padding: 10px;
+}
+
+.messages h2 {
+    margin-bottom: 10px;
+}
