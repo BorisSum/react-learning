@@ -1,1 +1,22 @@
+.searchPageWrapper {
+   padding:10px;   
+}
 
+.searchHeader {
+   border-bottom: 2px solid lightgray;
+   margin-bottom:10px;
+}
+
+.showMoreBtn {
+   width:50%;
+   height:40px;
+   background-color: royalblue;
+   margin:0 auto;
+   margin-top:40px;
+   border:none;
+   border-radius: 5px;
+   text-align: center;
+   line-height: 40px;
+   cursor: pointer;
+   color:white;
+}

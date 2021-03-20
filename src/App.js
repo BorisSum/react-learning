@@ -7,7 +7,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import Search from "./components/Search/Search";
+import SearchContainer from "./components/Search/SearchContainer";
 
 const App = () => {
     return (
@@ -24,7 +24,7 @@ const App = () => {
                 <Route path='/News' component={News}/>
                 <Route path='/Music' component={Music}/>
                 <Route path='/Settings' component={Settings}/>
-                <Route path='/Search' component={Search} />
+                <Route path='/Search' component={SearchContainer} />
             </div>
         </div>
     );
