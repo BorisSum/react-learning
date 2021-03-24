@@ -20,3 +20,67 @@
    cursor: pointer;
    color:white;
 }
+
+.friendWrapper {
+   border: 1px solid lightgrey;
+   border-radius:10px;
+   display:flex;
+   padding:10px;
+   margin-bottom: 10px;
+}
+
+.avatarWrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;   
+}
+
+.friendInfoWrapper {
+   color:maroon;
+   display:flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-left:30px;
+   font-size: 20px;
+   font-weight: 400;
+
+}
+
+.friendAva {
+   width:80px;
+   height:80px;
+   border:none;
+   border-radius:50%;
+   background-color: lightgrey;   
+}
+
+.friendBtn {
+   margin-top:10px;
+   width:100px;
+   height:30px;
+   border-radius: 10px;
+   background-color: green;
+   margin-bottom: 0;
+   color:white;
+   line-height: 30px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.unfriendBtn {
+   margin-top:10px;
+   width:100px;
+   height:30px;
+   border-radius: 10px;
+   background-color: red;
+   margin-bottom: 0;
+   color:white;
+   line-height: 30px;
+   text-align: center;
+   cursor: pointer; 
+}
+
+.friendFIO {
+   font-size: 28px;
+   font-weight: 600;
+}

@@ -1,16 +1,19 @@
-import {folowToggleCreator} from './../../redux/SearchReducer';
+import {followToggleCreator, getUsersFromSrvCreator} from './../../redux/SearchReducer';
 import Search from './Search';
 import {connect} from 'react-redux';
 
 const mapStateToProps = (state) => {
     return {
-        searchData:state.searchData,
+        searchData:state.searchPage.searchData,
     }
 };
 
 const mapDispatchToProps = (dispatch) => {
         return {
-        toggleFollow: () => {dispatch(folowToggleCreator())}
+        toggleFollow: (userId) => {dispatch(followToggleCreator(userId))},
+        getUsersFromSrv: (newUserList) => {
+            dispatch(getUsersFromSrvCreator(newUserList));
+        }
     }
 };
 

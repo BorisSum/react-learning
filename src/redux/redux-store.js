@@ -6,7 +6,7 @@ import searchReducer from './SearchReducer';
 const reducers = combineReducers({
    profilePage: profileReducer,
    dialogsPage: dialogsReducer,
-   searchData:searchReducer,
+   searchPage: searchReducer,
 });
 
 const store = createStore(reducers);
