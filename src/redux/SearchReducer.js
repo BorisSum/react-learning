@@ -1,12 +1,14 @@
 const FOLLOW_TOGGLE = 'FOLLOW-TOGGLE';
 const SET_USERS = 'SET-USERS';
-const CHANGE_CURRENT_PAGE = 'CHANGE_CURRENT_PAGE'; 
+const CHANGE_CURRENT_PAGE = 'CHANGE_CURRENT_PAGE';
+const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING'; 
 
 const initialState = {
    searchData: [],
    pageSize: 3,
    totalCount:0,
    currentPage: 1,
+   isFetching: false,
 };
 
 const searchReducer = (state = initialState, action) => {
@@ -35,12 +37,19 @@ const searchReducer = (state = initialState, action) => {
             currentPage: action.newCurrentPage
          }
 
+      case TOGGLE_IS_FETCHING:
+         return {
+            ...state,
+            isFetching: action.isFetching,
+         }
+
       default: return state;
    };
 };
 
-export const followToggleCreator = (userId) => ({type: FOLLOW_TOGGLE, userId});
-export const getUsersFromSrvCreator = (newUserList, totalCount) => ({type: SET_USERS, newUserList, totalCount});
-export const setNewCurrentPageCreator = (newCurrentPage) => ({type: CHANGE_CURRENT_PAGE, newCurrentPage})
+export const toggleFollow = (userId) => ({type: FOLLOW_TOGGLE, userId});
+export const getUsersFromSrv = (newUserList, totalCount) => ({type: SET_USERS, newUserList, totalCount});
+export const setNewCurrentPage = (newCurrentPage) => ({type: CHANGE_CURRENT_PAGE, newCurrentPage});
+export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching});
 
 export default searchReducer;

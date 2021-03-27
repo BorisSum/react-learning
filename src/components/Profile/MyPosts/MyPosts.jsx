@@ -7,11 +7,11 @@ const MyPosts = (props) => {
       .map( post => <Post text={post.text} likes={post.likeCount} />);
 
    const onSendPost = () => {
-      props.sendPost();
+      props.addPost();
    }
 
    const onUpdateText = (event) => {
-      props.updateText(event.target.value);
+      props.updatePostText(event.target.value);
    };
 
    return (

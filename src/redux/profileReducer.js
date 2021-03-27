@@ -29,7 +29,7 @@ switch (action.type) {
 };
 };
 
-export const addPostCreator = () => ({type: ADD_POST});
-export const updatePostTextCreator = newText => ({type: UPDATE_POST_TEXT, data: newText});
+export const addPost = () => ({type: ADD_POST});
+export const updatePostText = newText => ({type: UPDATE_POST_TEXT, data: newText});
 
 export default profileReducer;
