@@ -1,6 +1,6 @@
 import styles from './Profile.module.css'
-import Description from './Description/Description'
 import MyPostsContainer from './MyPosts/MyPostsContainer';
+import DescriptionContainer from './Description/DescriptionContainer';
 
 
 const Profile = () => {
@@ -10,7 +10,7 @@ const Profile = () => {
          <div>
             <img className = {styles.profile_img} alt="2" src="./travel.jpg"></img>
          </div>
-         <Description />
+         <DescriptionContainer />
          <MyPostsContainer />
       </div>      
    );

@@ -1,4 +1,5 @@
 import style from './Search.module.css';
+import {NavLink} from "react-router-dom";
 
 const Search = props => {
 
@@ -10,8 +11,10 @@ const Search = props => {
         {
             props.searchData.map( user => <div className={style.friendWrapper}>
                 <div className={style.avatarWrapper}>
+                    <NavLink to='/profile'>
                     <img src={user.photos.small != null ? user.photos.small : './logo.svg'} alt='ava'
                         className={style.friendAva}></img>
+                    </NavLink>
                     <div className={user.followed ? style.unfriendBtn : style.friendBtn}
                         onClick={() => {
                             props.toggleFollow(user.id);
